@@ -21,7 +21,7 @@ public:
  string GetResources() const
  {
     string res;
-    res = name  + ' ' + to_string(resources) + " resource point";
+    res = name  + " have " + to_string(resources) + " resource point";
     return res;
  }
  void Eating()
@@ -106,21 +106,21 @@ public:
         cout << "Need to sleep" << endl;
     if(satiety > 0 && endurance > 0)
     {
-        if(d < 10)
+        if(d <= 10)
         {
             cout << "hunting gave us 1 resource point" << endl;
             resources += 1;
             satiety -= 20;
             endurance -= 20;
         }
-        else if(d < 20 && d > 10 )
+        else if(d <= 20 && d > 10 )
         {
             cout << "hunting gave us 2 resource point" << endl;
             resources += 2;
             satiety -= 20;
             endurance -= 20;
         }
-        else if(d < 30 && d > 20)
+        else if(d <= 50 && d > 20)
         {
             cout << "hunting gave us 3 resource point" << endl;
             resources += 3;
@@ -159,21 +159,21 @@ public:
         cout << "Need to sleep" << endl;
     if(satiety > 0 && endurance > 0)
     {
-        if(g < 10)
+        if(g <= 10)
         {
             cout << "fishing gave us 1 resource point" << endl;
             resources += 1;
             satiety -= 20;
             endurance -= 20;
         }
-        else if(10 < g && g < 20)
+        else if(10 < g && g <= 20)
         {
             cout << "fishing gave us 2 resource point" << endl;
             resources += 2;
             satiety -= 20;
             endurance -= 20;
         }
-        else if(20 < g && g < 30)
+        else if(20 < g && g <= 50)
         {
             cout << "fishing gave us 3 resource point" << endl;
             resources += 3;
@@ -212,21 +212,21 @@ public:
         cout << "Need to sleep" << endl;
     if(satiety > 0 && endurance > 0)
     {
-        if(k < 10)
+        if(k <= 10)
         {
             cout << "gathering gave us 1 resource point" << endl;
             resources += 1;
             satiety -= 20;
             endurance -= 20;
         }
-        else if(k < 20 && k > 10)
+        else if(k <= 20 && k > 10)
         {
             cout << "gathering gave us 2 resource point" << endl;
             resources += 2;
             satiety -= 20;
             endurance -= 20;
         }
-        else if(k > 20 && k < 30)
+        else if(k > 20 && k <= 50)
         {
             cout << "gathering gave us 3 resource point" << endl;
             resources += 3;
