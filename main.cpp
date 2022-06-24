@@ -403,7 +403,7 @@ int main()
 {
     srand(time(nullptr));
     HumanSystem tribe;
-	tribe.menu(); 
+    tribe.menu(); 
 	
     return 0;
 }
